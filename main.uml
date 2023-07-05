@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/Users/anasf/OneDrive/Desktop/praktikum UNI/SP23_Gruppe2AldowayaFahammMokadamBadawi/src/main/java/com/main</OriginalElement>
+  <nodes>
+    <node x="1356.2398175233482" y="1590.3160311794045">com.main.model.DataModel</node>
+    <node x="1014.5629175235174" y="1589.4602324924706">com.main.view.HelloApplication</node>
+    <node x="1923.460768741075" y="519.9751815923361">com.main.model.AgeRange</node>
+    <node x="1790.678862751306" y="886.3205284308202">com.main.model.KitchenStatus</node>
+    <node x="2354.4421572244837" y="651.1906088406389">com.main.model.Gender</node>
+    <node x="2232.321465719739" y="1371.7083447103169">com.main.model.CsvReader</node>
+    <node x="2268.254157174231" y="-13.683962893129973">com.main.model.Participant</node>
+    <node x="426.8885929235141" y="776.4289827320201">com.main.model.Group</node>
+    <node x="816.9185637147733" y="659.3061257075625">com.main.model.GroupList</node>
+    <node x="2083.7196836805706" y="909.0050833991927">com.main.model.PairList</node>
+    <node x="825.7503435556017" y="1174.8287711065875">com.main.model.Pair</node>
+    <node x="143.48097805571894" y="1089.4617387118067">com.main.model.Course</node>
+    <node x="656.7260369785164" y="1820.8381512942196">com.main.view.UIHandler</node>
+    <node x="502.8662957850796" y="1498.1840659682368">com.main.view.GroupTableGenerator</node>
+    <node x="1280.5503631412298" y="1462.7413915684615">com.main.view.PairTableGenerator</node>
+    <node x="1733.1344067531043" y="1391.76712564969">com.main.controller.CreatePairsClass</node>
+    <node x="1228.2980479281728" y="1121.5110453040343">com.main.controller.CreateGroupsClass</node>
+    <node x="1424.0007151622422" y="764.3062906916729">com.main.model.FoodPreference</node>
+    <node x="-109.66971289865938" y="1351.7290095260998">com.main.model.CourseManager</node>
+    <node x="2543.2669336522717" y="916.6730000809737">com.main.model.Kitchen</node>
+    <node x="669.3873094491693" y="1622.027372359879">com.main.view.UIUtils</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.main.model.Participant" target="com.main.model.FoodPreference" relationship="TO_ONE">
+      <point x="-200.00015717423094" y="-15.000037106870025" />
+      <point x="1563.0" y="268.31600000000003" />
+      <point x="1563.0" y="697.0" />
+      <point x="1554.501" y="697.0" />
+      <point x="2.848377578175132E-4" y="-117.00029069167283" />
+    </edge>
+    <edge source="com.main.model.Pair" target="com.main.model.FoodPreference" relationship="TO_ONE">
+      <point x="25.499656444398283" y="177.00022889341244" />
+      <point x="1022.25" y="1574.184" />
+      <point x="-122.66999999999999" y="1574.184" />
+      <point x="-122.66999999999999" y="257.81600000000003" />
+      <point x="1563.0" y="257.81600000000003" />
+      <point x="1563.0" y="697.0" />
+      <point x="1554.501" y="697.0" />
+      <point x="2.848377578175132E-4" y="-117.00029069167283" />
+    </edge>
+    <edge source="com.main.model.GroupList" target="com.main.model.Pair" relationship="TO_MANY">
+      <point x="-192.99956371477333" y="-1.2570756246077508E-4" />
+      <point x="791.0" y="860.306" />
+      <point x="791.0" y="1560.0" />
+      <point x="996.75" y="1560.0" />
+      <point x="-3.4355560171661637E-4" y="177.00022889341244" />
+    </edge>
+    <edge source="com.main.model.DataModel" target="com.main.model.Group" relationship="TO_MANY">
+      <point x="15.000182476651844" y="-177.00003117940446" />
+      <point x="1614.24" y="1429.267" />
+      <point x="1208.063" y="1429.267" />
+      <point x="1208.063" y="1081.0" />
+      <point x="776.0" y="1081.0" />
+      <point x="776.0" y="1028.429" />
+      <point x="163.00040707648589" y="15.000017267979842" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.model.DataModel" relationship="CREATE">
+      <point x="107.99969055083068" y="-62.56737235987907" />
+      <point x="932.887" y="1628.46" />
+      <point x="932.887" y="1608.0" />
+      <point x="979.0" y="1608.0" />
+      <point x="979.0" y="1801.5" />
+      <point x="-242.99981752334816" y="34.18396882059551" />
+    </edge>
+    <edge source="com.main.model.Pair" target="com.main.model.PairList" relationship="CREATE">
+      <point x="-3.4355560171661637E-4" y="-176.99977110658756" />
+      <point x="996.75" y="1099.0" />
+      <point x="2040.179" y="1099.0" />
+      <point x="2040.179" y="1067.821" />
+      <point x="-199.49968368057057" y="-42.18408339919267" />
+    </edge>
+    <edge source="com.main.view.HelloApplication" target="com.main.view.UIUtils" relationship="CREATE">
+      <point x="15.0" y="69.0" />
+      <point x="1130.0629175235174" y="2069.3379999999997" />
+      <point x="-122.66999999999999" y="2069.3379999999997" />
+      <point x="-122.66999999999999" y="1676.027" />
+      <point x="-108.0" y="-15.000372359879066" />
+    </edge>
+    <edge source="com.main.model.Group" target="com.main.model.Course" relationship="TO_ONE">
+      <point x="4.0707648588522716E-4" y="237.00001726797996" />
+      <point x="589.889" y="1316.0" />
+      <point x="238.481" y="1316.0" />
+      <point x="2.1944281058949855E-5" y="94.50026128819331" />
+    </edge>
+    <edge source="com.main.view.HelloApplication" target="com.main.model.DataModel" relationship="CREATE">
+      <point x="-100.49991752351741" y="-45.00023249247056" />
+      <point x="979.0" y="1613.46" />
+      <point x="979.0" y="1801.5" />
+      <point x="-242.99981752334816" y="34.18396882059551" />
+    </edge>
+    <edge source="com.main.view.GroupTableGenerator" target="com.main.view.PairTableGenerator" relationship="CREATE">
+      <point x="10.49970421492037" y="31.499934031763132" />
+      <point x="644.366" y="1791.0" />
+      <point x="991.0" y="1791.0" />
+      <point x="991.0" y="1788.027" />
+      <point x="1328.24" y="1788.027" />
+      <point x="-75.8103631412298" y="31.49960843153849" />
+    </edge>
+    <edge source="com.main.model.Participant" target="com.main.model.Gender" relationship="TO_ONE">
+      <point x="-18.311999949747133" y="297.0" />
+      <point x="0.0" y="-94.5" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.Participant" relationship="TO_MANY">
+      <point x="250.99995207182724" y="-4.5304034301807405E-5" />
+      <point x="1761.0" y="1226.511" />
+      <point x="1761.0" y="283.31600000000003" />
+      <point x="-200.00015717423094" y="-3.710687002467239E-5" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.Pair" relationship="TO_MANY">
+      <point x="-4.792817276211281E-5" y="104.9999546959657" />
+      <point x="1479.298" y="1352.0" />
+      <point x="1646.5" y="1352.0" />
+      <point x="1646.5" y="1560.0" />
+      <point x="996.75" y="1560.0" />
+      <point x="-3.4355560171661637E-4" y="177.00022889341244" />
+    </edge>
+    <edge source="com.main.model.GroupList" target="com.main.model.Group" relationship="TO_MANY">
+      <point x="4.362852266694972E-4" y="200.99987429243754" />
+      <point x="1009.919" y="1081.0" />
+      <point x="776.0" y="1081.0" />
+      <point x="776.0" y="1028.429" />
+      <point x="163.00040707648589" y="15.000017267979842" />
+    </edge>
+    <edge source="com.main.model.PairList" target="com.main.model.Participant" relationship="TO_MANY">
+      <point x="-14.999683680570797" y="200.9999166008074" />
+      <point x="2268.22" y="1332.0" />
+      <point x="1761.0" y="1332.0" />
+      <point x="1761.0" y="283.31600000000003" />
+      <point x="-200.00015717423094" y="-3.710687002467239E-5" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.view.UIHandler" relationship="TO_ONE">
+      <point x="94.33872752934712" y="69.0" />
+      <point x="0.0" y="-93.0" />
+    </edge>
+    <edge source="com.main.view.UIHandler" target="com.main.view.UIUtils" relationship="TO_ONE">
+      <point x="-79.33903697851645" y="-93.0" />
+      <point x="14.999690550830678" y="69.0" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.model.DataModel" relationship="TO_ONE">
+      <point x="-3.094491693218515E-4" y="-69.00037235987907" />
+      <point x="777.387" y="1592.0" />
+      <point x="902.887" y="1592.0" />
+      <point x="902.887" y="1752.527" />
+      <point x="-242.99981752334816" y="-14.789031179404446" />
+    </edge>
+    <edge source="com.main.view.GroupTableGenerator" target="com.main.model.DataModel" relationship="TO_ONE">
+      <point x="-2.957850796292405E-4" y="31.499934031763132" />
+      <point x="633.866" y="1592.0" />
+      <point x="902.887" y="1592.0" />
+      <point x="902.887" y="1752.527" />
+      <point x="-242.99981752334816" y="-14.789031179404446" />
+    </edge>
+    <edge source="com.main.model.DataModel" target="com.main.model.Pair" relationship="TO_MANY">
+      <point x="1.8247665184389916E-4" y="-177.00003117940446" />
+      <point x="1599.24" y="1560.0" />
+      <point x="996.75" y="1560.0" />
+      <point x="-3.4355560171661637E-4" y="177.00022889341244" />
+    </edge>
+    <edge source="com.main.model.Kitchen" target="com.main.model.Participant" relationship="TO_MANY">
+      <point x="6.634772807956324E-5" y="128.99999991902632" />
+      <point x="2714.267" y="1332.0" />
+      <point x="1761.0" y="1332.0" />
+      <point x="1761.0" y="283.31600000000003" />
+      <point x="-200.00015717423094" y="-3.710687002467239E-5" />
+    </edge>
+    <edge source="com.main.model.CsvReader" target="com.main.model.Kitchen" relationship="CREATE">
+      <point x="131.5" y="-15.0" />
+      <point x="2729.267" y="1413.7083447103169" />
+      <point x="15.00006634772808" y="129.0" />
+    </edge>
+    <edge source="com.main.model.Pair" target="com.main.model.Participant" relationship="TO_ONE">
+      <point x="14.999656444398283" y="177.00022889341244" />
+      <point x="1011.75" y="1545.0" />
+      <point x="2512.821" y="1545.0" />
+      <point x="2512.821" y="1332.0" />
+      <point x="1761.0" y="1332.0" />
+      <point x="1761.0" y="283.31600000000003" />
+      <point x="-200.00015717423094" y="-3.710687002467239E-5" />
+    </edge>
+    <edge source="com.main.model.Participant" target="com.main.model.KitchenStatus" relationship="TO_ONE">
+      <point x="-200.0" y="14.999962893129975" />
+      <point x="1905.960768741075" y="298.31600000000003" />
+      <point x="-0.7180940102309705" y="-94.5" />
+    </edge>
+    <edge source="com.main.model.Participant" target="com.main.model.AgeRange" relationship="TO_ONE">
+      <point x="-200.0" y="289.5" />
+      <point x="142.00000000000023" y="-100.15914448546607" />
+    </edge>
+    <edge source="com.main.view.UIHandler" target="com.main.view.GroupTableGenerator" relationship="TO_ONE">
+      <point x="-215.0" y="14.999848705780323" />
+      <point x="531.0" y="1928.838" />
+      <point x="-102.86629578507961" y="31.5" />
+    </edge>
+    <edge source="com.main.model.CsvReader" target="com.main.model.PairList" relationship="CREATE">
+      <point x="-131.50046571973917" y="-3.447103167673049E-4" />
+      <point x="2039.634" y="1428.708" />
+      <point x="2039.634" y="1099.0" />
+      <point x="2040.179" y="1099.0" />
+      <point x="2040.179" y="1067.821" />
+      <point x="-199.49968368057057" y="-42.18408339919267" />
+    </edge>
+    <edge source="com.main.view.UIHandler" target="com.main.view.PairTableGenerator" relationship="TO_ONE">
+      <point x="-215.0000369785164" y="-1.512942196768563E-4" />
+      <point x="546.0" y="1913.838" />
+      <point x="546.0" y="2024.338" />
+      <point x="1313.24" y="2024.338" />
+      <point x="-90.8103631412298" y="31.49960843153849" />
+    </edge>
+    <edge source="com.main.view.PairTableGenerator" target="com.main.model.DataModel" relationship="TO_ONE">
+      <point x="-65.3103631412298" y="31.49960843153849" />
+      <point x="1338.74" y="1744.96" />
+      <point x="902.887" y="1744.96" />
+      <point x="902.887" y="1752.527" />
+      <point x="-242.99981752334816" y="-14.789031179404446" />
+    </edge>
+    <edge source="com.main.model.Pair" target="com.main.controller.CreateGroupsClass" relationship="CREATE">
+      <point x="170.99965644439828" y="2.2889341244081152E-4" />
+      <point x="1188.0" y="1351.829" />
+      <point x="1188.0" y="1226.511" />
+      <point x="-251.00004792817276" y="-4.5304034301807405E-5" />
+    </edge>
+    <edge source="com.main.model.CsvReader" target="com.main.model.Pair" relationship="CREATE">
+      <point x="-131.50046571973917" y="-15.000344710316767" />
+      <point x="2054.634" y="1413.708" />
+      <point x="2054.634" y="1372.0" />
+      <point x="1549.0" y="1372.0" />
+      <point x="1549.0" y="1367.0" />
+      <point x="170.99965644439828" y="15.17122889341249" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.CourseManager" relationship="CREATE">
+      <point x="-72.79704792817279" y="-105.0000453040343" />
+      <point x="1406.501" y="268.31600000000003" />
+      <point x="125.981" y="268.31600000000003" />
+      <point x="125.981" y="1298.0" />
+      <point x="121.83" y="1298.0" />
+      <point x="14.999712898659382" y="-93.0000095260998" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.PairList" relationship="CREATE">
+      <point x="-4.792817276211281E-5" y="-105.0000453040343" />
+      <point x="1479.298" y="1099.0" />
+      <point x="2040.179" y="1099.0" />
+      <point x="2040.179" y="1067.821" />
+      <point x="-199.49968368057057" y="-42.18408339919267" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.view.UIHandler" relationship="CREATE">
+      <point x="107.99969055083068" y="-15.000372359879066" />
+      <point x="955.0" y="1676.027" />
+      <point x="955.0" y="1706.027" />
+      <point x="932.887" y="1706.027" />
+      <point x="61.16096302148355" y="-93.00015129421968" />
+    </edge>
+    <edge source="com.main.model.DataModel" target="com.main.controller.CreateGroupsClass" relationship="CREATE">
+      <point x="-29.999817523348156" y="-177.00003117940446" />
+      <point x="1569.24" y="1444.267" />
+      <point x="1188.0" y="1444.267" />
+      <point x="1188.0" y="1226.511" />
+      <point x="-251.00004792817276" y="-4.5304034301807405E-5" />
+    </edge>
+    <edge source="com.main.view.GroupTableGenerator" target="com.main.view.PairTableGenerator" relationship="TO_ONE">
+      <point x="-30.00029578507963" y="31.499934031763132" />
+      <point x="603.866" y="1803.338" />
+      <point x="546.0" y="1803.338" />
+      <point x="546.0" y="2024.338" />
+      <point x="1313.24" y="2024.338" />
+      <point x="-90.8103631412298" y="31.49960843153849" />
+    </edge>
+    <edge source="com.main.view.HelloApplication" target="com.main.view.UIHandler" relationship="CREATE">
+      <point x="-100.49991752351741" y="-30.00023249247056" />
+      <point x="955.0" y="1628.46" />
+      <point x="955.0" y="1706.027" />
+      <point x="932.887" y="1706.027" />
+      <point x="61.16096302148355" y="-93.00015129421968" />
+    </edge>
+    <edge source="com.main.view.HelloApplication" target="com.main.view.GroupTableGenerator" relationship="CREATE">
+      <point x="-100.49991752351741" y="-15.000232492470559" />
+      <point x="917.887" y="1643.46" />
+      <point x="917.887" y="1608.0" />
+      <point x="618.866" y="1608.0" />
+      <point x="-15.00029578507963" y="31.499934031763132" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.Group" relationship="TO_MANY">
+      <point x="-207.79804792817276" y="-105.0000453040343" />
+      <point x="1271.5" y="1081.0" />
+      <point x="776.0" y="1081.0" />
+      <point x="776.0" y="1028.429" />
+      <point x="163.00040707648589" y="15.000017267979842" />
+    </edge>
+    <edge source="com.main.model.Group" target="com.main.model.Pair" relationship="TO_MANY">
+      <point x="163.00040707648589" y="1.7267979842472414E-5" />
+      <point x="791.0" y="1013.429" />
+      <point x="791.0" y="1560.0" />
+      <point x="996.75" y="1560.0" />
+      <point x="-3.4355560171661637E-4" y="177.00022889341244" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.view.GroupTableGenerator" relationship="CREATE">
+      <point x="-41.887309449169265" y="-69.00037235987907" />
+      <point x="735.5" y="1608.0" />
+      <point x="618.866" y="1608.0" />
+      <point x="-15.00029578507963" y="31.499934031763132" />
+    </edge>
+    <edge source="com.main.model.Participant" target="com.main.model.Kitchen" relationship="TO_ONE">
+      <point x="-159.75415717423084" y="296.9999628931299" />
+      <point x="2308.5" y="864.0" />
+      <point x="2714.267" y="864.0" />
+      <point x="6.634772807956324E-5" y="-129.00000008097368" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.view.PairTableGenerator" relationship="CREATE">
+      <point x="107.99969055083068" y="-3.723598790656979E-4" />
+      <point x="991.0" y="1691.027" />
+      <point x="991.0" y="1788.027" />
+      <point x="1328.24" y="1788.027" />
+      <point x="-75.8103631412298" y="31.49960843153849" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.controller.CreateGroupsClass" relationship="CREATE">
+      <point x="-3.094491693218515E-4" y="68.99962764012093" />
+      <point x="777.387" y="1777.527" />
+      <point x="1235.798" y="1777.527" />
+      <point x="1235.798" y="1470.241" />
+      <point x="1188.0" y="1470.241" />
+      <point x="1188.0" y="1226.511" />
+      <point x="-251.00004792817276" y="-4.5304034301807405E-5" />
+    </edge>
+    <edge source="com.main.view.HelloApplication" target="com.main.view.PairTableGenerator" relationship="CREATE">
+      <point x="-100.49991752351741" y="24.539767507529405" />
+      <point x="991.0" y="1683.0" />
+      <point x="991.0" y="1788.027" />
+      <point x="1328.24" y="1788.027" />
+      <point x="-75.8103631412298" y="31.49960843153849" />
+    </edge>
+    <edge source="com.main.model.DataModel" target="com.main.controller.CreateGroupsClass" relationship="TO_ONE">
+      <point x="-242.99981752334816" y="-106.31603117940449" />
+      <point x="1259.0" y="1661.0" />
+      <point x="1259.0" y="1352.0" />
+      <point x="1464.298" y="1352.0" />
+      <point x="-15.000047928172762" y="104.9999546959657" />
+    </edge>
+    <edge source="com.main.model.DataModel" target="com.main.model.Participant" relationship="TO_MANY">
+      <point x="-14.999817523348156" y="-177.00003117940446" />
+      <point x="1584.24" y="1545.0" />
+      <point x="2512.821" y="1545.0" />
+      <point x="2512.821" y="1332.0" />
+      <point x="1761.0" y="1332.0" />
+      <point x="1761.0" y="283.31600000000003" />
+      <point x="-200.00015717423094" y="-3.710687002467239E-5" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.Kitchen" relationship="TO_MANY">
+      <point x="229.20195207182724" y="-105.0000453040343" />
+      <point x="1708.5" y="864.0" />
+      <point x="2714.267" y="864.0" />
+      <point x="6.634772807956324E-5" y="-129.00000008097368" />
+    </edge>
+    <edge source="com.main.model.PairList" target="com.main.model.Pair" relationship="TO_MANY">
+      <point x="3.163194292028493E-4" y="200.9999166008074" />
+      <point x="2283.22" y="1352.0" />
+      <point x="1646.5" y="1352.0" />
+      <point x="1646.5" y="1560.0" />
+      <point x="996.75" y="1560.0" />
+      <point x="-3.4355560171661637E-4" y="177.00022889341244" />
+    </edge>
+    <edge source="com.main.controller.CreateGroupsClass" target="com.main.model.GroupList" relationship="CREATE">
+      <point x="-87.79704792817279" y="-105.0" />
+      <point x="1391.501" y="860.3061257075625" />
+      <point x="193.0000000000001" y="0.0" />
+    </edge>
+    <edge source="com.main.controller.CreatePairsClass" target="com.main.model.Pair" relationship="CREATE">
+      <point x="14.999593246895756" y="-69.00012564968983" />
+      <point x="1892.634" y="1372.0" />
+      <point x="1549.0" y="1372.0" />
+      <point x="1549.0" y="1367.0" />
+      <point x="170.99965644439828" y="15.17122889341249" />
+    </edge>
+    <edge source="com.main.view.PairTableGenerator" target="com.main.model.Pair" relationship="CREATE">
+      <point x="123.49963685877015" y="-3.9156846150945057E-4" />
+      <point x="1549.0" y="1494.241" />
+      <point x="1549.0" y="1367.0" />
+      <point x="170.99965644439828" y="15.17122889341249" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.view.HelloApplication" relationship="TO_ONE">
+      <point x="-108.0" y="14.999627640120934" />
+      <point x="629.366" y="1706.027" />
+      <point x="629.366" y="2054.3379999999997" />
+      <point x="1115.0629175235174" y="2054.3379999999997" />
+      <point x="0.0" y="69.0" />
+    </edge>
+    <edge source="com.main.model.Group" target="com.main.model.CourseManager" relationship="CREATE">
+      <point x="-14.999592923514115" y="237.00001726797996" />
+      <point x="574.889" y="1298.0" />
+      <point x="121.83" y="1298.0" />
+      <point x="14.999712898659382" y="-93.0000095260998" />
+    </edge>
+    <edge source="com.main.view.HelloApplication" target="com.main.model.DataModel" relationship="TO_ONE">
+      <point x="-100.49991752351741" y="-2.3249247055900923E-4" />
+      <point x="902.887" y="1658.46" />
+      <point x="902.887" y="1752.527" />
+      <point x="-242.99981752334816" y="-14.789031179404446" />
+    </edge>
+    <edge source="com.main.model.CourseManager" target="com.main.model.Group" relationship="CREATE">
+      <point x="216.49971289865937" y="-9.526099802315002E-6" />
+      <point x="381.0" y="1444.729" />
+      <point x="381.0" y="1013.429" />
+      <point x="-162.99959292351411" y="1.7267979842472414E-5" />
+    </edge>
+    <edge source="com.main.view.UIUtils" target="com.main.controller.CreateGroupsClass" relationship="TO_ONE">
+      <point x="-108.00030944916932" y="-3.723598790656979E-4" />
+      <point x="315.83" y="1691.027" />
+      <point x="315.83" y="2039.338" />
+      <point x="1149.226" y="2039.338" />
+      <point x="1149.226" y="1828.338" />
+      <point x="1259.0" y="1828.338" />
+      <point x="1259.0" y="1352.0" />
+      <point x="1464.298" y="1352.0" />
+      <point x="-15.000047928172762" y="104.9999546959657" />
+    </edge>
+    <edge source="com.main.model.Pair" target="com.main.model.Course" relationship="TO_MANY">
+      <point x="-171.00034355560172" y="7.400228893412532" />
+      <point x="806.0" y="1359.229" />
+      <point x="806.0" y="1316.0" />
+      <point x="238.481" y="1316.0" />
+      <point x="2.1944281058949855E-5" y="94.50026128819331" />
+    </edge>
+    <edge source="com.main.view.GroupTableGenerator" target="com.main.model.Group" relationship="CREATE">
+      <point x="-131.00029578507963" y="-6.596823686777498E-5" />
+      <point x="381.0" y="1529.684" />
+      <point x="381.0" y="1013.429" />
+      <point x="-162.99959292351411" y="1.7267979842472414E-5" />
+    </edge>
+    <edge source="com.main.model.CsvReader" target="com.main.model.Participant" relationship="CREATE">
+      <point x="131.5" y="0.0" />
+      <point x="2902.7669336522717" y="1428.7083447103169" />
+      <point x="2902.7669336522717" y="283.31603710687" />
+      <point x="200.0" y="0.0" />
+    </edge>
+    <edge source="com.main.model.CourseManager" target="com.main.model.Course" relationship="TO_MANY">
+      <point x="-2.8710134061782355E-4" y="-93.0000095260998" />
+      <point x="106.83" y="1316.0" />
+      <point x="238.481" y="1316.0" />
+      <point x="2.1944281058949855E-5" y="94.50026128819331" />
+    </edge>
+    <edge source="com.main.controller.CreatePairsClass" target="com.main.model.PairList" relationship="CREATE">
+      <point x="-4.067531042437622E-4" y="-69.00012564968983" />
+      <point x="1877.634" y="1099.0" />
+      <point x="2040.179" y="1099.0" />
+      <point x="2040.179" y="1067.821" />
+      <point x="-199.49968368057057" y="-42.18408339919267" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6291870998850952" showDependencies="true" x="990.05664" y="1557.8552132484076" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>public</VISIBILITY>
+</Diagram>
+

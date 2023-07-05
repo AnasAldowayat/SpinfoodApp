@@ -1,0 +1,8 @@
+Ich bekomme eure Tests nicht zusammen zum starten. Nur einzelne nacheinander.
+Checkstyle einhalten ist Pflicht.
+Klassendiagramm ist nicht aktuell.
+Ganttdiagramm ist nicht aktuell.
+Testdoku auch nicht.
+Ihr habt keine Paketstruktur.
+Klassen sollten nicht so groß sein. 200 Zeilen max. Am besten zu große Klassen teilen. Z.B. Algorithm
+Ihr habt auch etwa 200 Warnings. Die könnte man auch lösen.
